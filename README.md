@@ -1,9 +1,16 @@
-### Usage
+### Demo
+https://paveleremin.github.io/react-es6-webpack
 
+### Required tools
+*nodejs* with *npm*  
+*webpack*  
+*eslint*
+
+### Install and launch the app
 ```
 npm install
 npm start
-open http://localhost:3000
+open browser with http://localhost:3000
 ```
 
 

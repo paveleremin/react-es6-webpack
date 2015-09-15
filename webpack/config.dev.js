@@ -26,7 +26,7 @@ module.exports = {
             loader: 'style!css!less'
         }, {
             test: /\.jpe?g$|\.gif$|\.png$|\.eot|\.svg$|\.woff2?$|\.ttf$|\.json$/,
-            loader: 'file-loader'
+            loader: 'file'
         }]
     },
     plugins: [
