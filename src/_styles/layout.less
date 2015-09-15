@@ -1,0 +1,23 @@
+.btn.with-loader {
+    position: relative;
+    .fa-spin {
+        top: 50%;
+        left: 50%;
+        margin-left: -7px;
+        margin-top: -7px;
+        position: absolute;
+        display: none;
+    }
+    &.loading {
+        .fa-spin {
+            display: inline-block;
+        }
+        > span {
+            visibility: hidden;
+        }
+    }
+}
+
+.fade:not(.in) .alert {
+    color: @alert-danger-bg;
+}
