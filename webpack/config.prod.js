@@ -25,7 +25,11 @@ module.exports = {
             test: /\.less$/,
             loader: ExtractTextPlugin.extract('style', 'css!less')
         }, {
-            test: /\.(jpe?g|gif|png|eot|svg|woff2?|ttf|json|txt)$/,
+            test: /\.(jpe?g|gif|png|json|txt)$/,
+            loader: 'file'
+        }, {
+            // use this mask for font-awesome fonts with params
+            test: /\.(eot|svg|woff2?|ttf)(\?.*$|$)/,
             loader: 'file'
         }]
     },
