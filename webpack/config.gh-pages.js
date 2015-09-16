@@ -14,7 +14,7 @@ module.exports = {
         path: path.join(__dirname, '..', 'dist'),
         filename: '[name].js',
         chunkFilename: '[name].js',
-        publicPath: '/'
+        publicPath: '/react-es6-webpack/'
     },
     module: {
         loaders: [{

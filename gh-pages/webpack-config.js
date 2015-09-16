@@ -4,6 +4,7 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var Clean = require('clean-webpack-plugin');
+var GhPages = require('./webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
@@ -14,7 +15,7 @@ module.exports = {
         path: path.join(__dirname, '..', 'dist'),
         filename: '[name].js',
         chunkFilename: '[name].js',
-        publicPath: '/'
+        publicPath: '/react-es6-webpack/'
     },
     module: {
         loaders: [{
@@ -48,6 +49,7 @@ module.exports = {
             compress: {
                 warnings: false
             }
-        })
+        }),
+        new GhPages('./dist', path.join(__dirname, '..'))
     ]
 };
